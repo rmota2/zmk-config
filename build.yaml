@@ -20,13 +20,14 @@
 ---
 board: ["nice_nano_v2"]
 shield: ["lily58_left", "lily58_right"]
-config: \"CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y\"
+
 include:
   - board: nice_nano_v2
     shield: lily58_left
-    config: \"CONFIG_ZMK_SPLIT_ROLE_CENTRAL=y\"
+    config: \"CONFIG_ZMK_SPLIT_ROLE_CENTRAL=y\", \"CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y\"
   - board: nice_nano_v2
     shield: lily58_right
+    config: \"CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y\"
   - board: nice_nano_v2
     shield: settings_reset
 
